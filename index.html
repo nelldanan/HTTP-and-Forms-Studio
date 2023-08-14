@@ -1,19 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search Engine Selector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
-</head>
+  <body>
+    <form id="searchForm">
+      <!-- Create a text input for search term -->
+      <label>Search Term: <input type="text" name="q" required></label>
 
-<body>
+      <!-- Create radio buttons for search engines -->
+      <label>
+        <input type="radio" name="engine" value="google" required> Google
+      </label>
+      <label>
+        <input type="radio" name="engine" value="duckDuckGo" required> DuckDuckGo
+      </label>
+      <label>
+        <input type="radio" name="engine" value="bing" required> Bing
+      </label>
+      <label>
+        <input type="radio" name="engine" value="ask" required> Ask
+      </label>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
-	</form>
-
-</body>
+      <!-- Create a submit button -->
+      <button type="submit">Go!</button>
+    </form>
+  </body>
+</html>
